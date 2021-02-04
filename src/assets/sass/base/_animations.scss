@@ -1,0 +1,18 @@
+@keyframes anim {
+  to {
+    background-position: right -40px top 0;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

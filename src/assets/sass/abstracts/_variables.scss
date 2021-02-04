@@ -1,0 +1,23 @@
+// COLOR
+:root {
+  --color: #202020;
+  --color-primary: #55c57a;
+  --color-secondary: #311b92;
+  --bg: #fff;
+  --bg-secondary: #fff;
+  --border-color: #e7e7e7;
+  --bg-card: #fcfcfc;
+  --shadow: 0, 0, 0;
+  --filter-primary: invert(17%) sepia(43%) saturate(4493%) hue-rotate(244deg) brightness(80%) contrast(111%);
+
+}
+
+
+//FONT SIZE
+$default-font-size: 1.6rem;
+//GRID
+$gutter-width: 92rem;
+$gutter-horizontal: 2rem;
+$gutter-vertical: 2rem;
+$gutter-vertical-small: 1rem;
+$gutter-vertical-very-small: 0.5rem;

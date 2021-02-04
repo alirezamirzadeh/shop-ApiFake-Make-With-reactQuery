@@ -1,0 +1,140 @@
+.products {
+    margin: 4.5rem 1rem;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    min-height: 22rem;
+    margin: 3rem 0; 
+    background-image: linear-gradient(
+        to left bottom,
+        rgba(#ffb, .8) 50%, 
+       rgba(#fff, 1)  50% 
+    );
+    padding: 2rem;
+    border-radius: 2rem;
+
+    @include respond(phone) {
+        align-self: flex-end;
+        cursor: pointer;
+        br {
+            display: none;
+        }
+    }
+
+    &__box1 {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__box2 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        @include respond(phone) {
+            bottom: 1rem;
+            justify-content: flex-end ;
+        }
+    }
+    &__box11 {
+        width: 14rem !important;
+        height: 100%;
+        display: flex;
+        align-self: center;
+    }
+
+    &__box12 {
+        width: 100%;
+        margin-left: 1.5rem;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    &__img {
+        max-height: 80%;
+        align-self: center;   
+        width: 14rem;
+        @include respond(phone) {
+            width: 8rem;
+        }
+    }
+
+    &__price {
+        font-size: 1.7rem;
+        font-weight: 900;
+    }
+
+    &__like {
+        height: 2.5rem;
+        cursor: pointer;
+        @include respond(phone) {
+            display: block;
+            position: relative;
+        }
+    }
+    &__view {
+        padding: 1rem 2rem;
+        cursor: pointer;
+        border-radius: 1rem;
+        color: #fff;
+        border: none;
+        transition: all .2s;
+        box-shadow: 0 0 1rem rgba(#000,.2);
+        background-color: #E57373;
+        @include respond(phone) {
+            display: none;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    &__box--cart{
+        display: flex;
+        justify-content: space-between;
+        
+        @media screen and (max-width: 360px) {
+           
+          transform: translateX(-2rem);
+        }
+        @media screen and (max-width: 340px) {
+           
+            transform: translateX(-5rem);
+        }
+        
+        @include respond(phone) {
+            bottom: 1rem;
+            justify-content: flex-end ;
+        }
+
+        & > span {
+            margin: 0 1.7rem ;
+            
+        }
+        & > img {
+            width: 2.5rem;
+            cursor: pointer;
+        }
+
+        .btn-cal {
+            
+            width: 2.5rem;
+            box-shadow: 0 0 1rem rgba(#000,.3);
+            cursor: pointer;
+            border-radius: 50%;
+            padding: .1rem .5rem;
+            background-color: #fff;
+            border: 0;
+        }
+    }
+
+
+}

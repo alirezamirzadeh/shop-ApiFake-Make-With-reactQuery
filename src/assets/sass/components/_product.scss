@@ -1,0 +1,29 @@
+.a-product {
+    max-width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: justify;
+
+    & > img {
+        
+        height: 30rem;
+        width: 100%;
+        margin: auto;
+
+    }
+    & > p {
+        margin: 1rem 0;
+    }
+    &-bold {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    & > button {
+        margin: 3rem 0 10rem 0;
+        width: 100% !important;
+    }
+}

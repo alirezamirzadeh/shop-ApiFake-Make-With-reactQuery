@@ -1,0 +1,28 @@
+.box-like {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(var(--shadow),.01);
+    border-radius: 2rem;
+
+    & > img {
+        width: 80%;
+    }
+}
+
+.product-like {
+    background-image: linear-gradient(
+        to left bottom,
+        rgba(red, .2) 50%, 
+       rgba(#fff, 1)  50% 
+    );
+}
+
+.product-cart {
+    background-image: linear-gradient(
+        to left bottom,
+        rgba(#55c57a, .2) 50%, 
+       rgba(#fff, 1)  50% 
+    );
+}
