@@ -3,9 +3,6 @@ Api:
 https://fakestoreapi.com/
 
 
-website:
-
-https://shop.alirezamirzadeh.ir/
 
 
 
